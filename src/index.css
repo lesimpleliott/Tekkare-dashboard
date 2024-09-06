@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css");
 
 @tailwind base;
 @tailwind components;
@@ -10,5 +11,5 @@ body {
 }
 
 .cta {
-  @apply shadow-CTA rounded-full border-4 border-transparent border-l-primary border-r-secondary bg-primary bg-gradient-to-r from-primary to-secondary px-6 py-2 font-medium text-white transition duration-200 ease-in-out hover:shadow-transparent;
+  @apply rounded-full border-4 border-transparent border-l-primary border-r-secondary bg-primary bg-gradient-to-r from-primary to-secondary font-medium transition duration-200 ease-in-out hover:shadow-transparent;
 }
