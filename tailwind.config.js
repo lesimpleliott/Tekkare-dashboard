@@ -11,6 +11,9 @@ export default {
         primary: "#5dc8ff",
         secondary: "#F962E5",
       },
+      boxShadow: {
+        CTA: "inset 2px 1000px 1px #2100ad",
+      },
     },
   },
   plugins: [],

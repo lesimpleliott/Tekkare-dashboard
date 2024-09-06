@@ -6,4 +6,9 @@
 
 body {
   @apply bg-background;
+  font-family: "Figtree", sans-serif;
+}
+
+.cta {
+  @apply shadow-CTA rounded-full border-4 border-transparent border-l-primary border-r-secondary bg-primary bg-gradient-to-r from-primary to-secondary px-6 py-2 font-medium text-white transition duration-200 ease-in-out hover:shadow-transparent;
 }
