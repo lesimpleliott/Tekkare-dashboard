@@ -6,19 +6,23 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background;
+  @apply bg-main-500;
   font-family: "Figtree", sans-serif;
 }
 
 main {
-  @apply flex flex-1 flex-col gap-2 overflow-y-scroll p-4
+  @apply flex flex-1 flex-col gap-2 overflow-y-scroll p-4;
 }
 
 .cta {
-  @apply rounded-full border-4 border-transparent border-l-primary border-r-secondary bg-primary bg-gradient-to-r from-primary to-secondary font-medium transition duration-200 ease-in-out hover:shadow-transparent;
+  @apply bg-primary-500 from-primary-500 to-secondary-500 border-l-primary-500 border-r-secondary-500 rounded-full border-4 border-transparent bg-gradient-to-r font-medium transition duration-200 ease-in-out hover:shadow-transparent;
+}
+
+.KPICard {
+  @apply text-main-500 rounded-md bg-gray-50 px-4 py-4 shadow-lg;
 }
 
 .active.hospitalLink::after {
   content: "";
-  @apply absolute left-0 top-1/2 h-10 w-1 -translate-y-1/2 rounded-r-full bg-secondary;
+  @apply bg-secondary-500 absolute left-0 top-1/2 h-10 w-1 -translate-y-1/2 rounded-r-full;
 }
