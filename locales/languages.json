@@ -1,0 +1,4 @@
+[
+  { "id": "fr", "name": "Français", "flag": "./flags/fr.svg" },
+  { "id": "en", "name": "English", "flag": "./flags/en.svg" }
+]
