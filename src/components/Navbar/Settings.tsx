@@ -10,11 +10,11 @@ const Settings = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center gap-3">
+    <section className="flex flex-col items-center justify-center">
       <a
         href="https://elegarage.fr/CV_LesimpleEliott.pdf"
         target="_blank"
-        className="flex w-full items-center justify-start gap-2 rounded-md px-2"
+        className="flex w-full items-center justify-start gap-2 rounded-md p-2 hover:bg-gray-200"
       >
         <i className="fa-regular fa-bell relative flex h-10 min-w-10 items-center justify-center rounded-full text-4xl text-gray-500">
           <span className="absolute right-0 top-0 flex h-4 w-4 animate-bounce items-center justify-center rounded-full bg-red-500 text-[10px] text-white">
@@ -29,10 +29,10 @@ const Settings = () => {
       <a
         href="https://elegarage.fr"
         target="_blank"
-        className="flex w-full items-center justify-start gap-2 rounded-md px-2"
+        className="flex w-full items-center justify-start gap-2 rounded-md p-2 hover:bg-gray-200"
       >
         <img
-          src="./eliott.webp"
+          src="/eliott.webp"
           alt="Photo Eliott Lesimple"
           className="h-10 w-10 min-w-10 rounded-full object-cover shadow-lg"
         />
@@ -41,11 +41,11 @@ const Settings = () => {
         </p>
       </a>
 
-      <div className="flex w-full items-center justify-start">
-        <div className="flex items-center gap-2 rounded-md px-2">
+      <div className="flex w-full items-center justify-start hover:bg-gray-200">
+        <div className="flex items-center gap-2 rounded-md p-2">
           <img
             onClick={() => toggleLanguageChange()}
-            src={`./flags/${i18n.i18n.language}.svg`}
+            src={`/flags/${i18n.i18n.language}.svg`}
             alt={t("language")}
             className="h-10 min-w-10 cursor-pointer rounded-full object-cover shadow-lg"
           />

@@ -9,7 +9,7 @@ const MenuToggleButton = () => {
   return (
     <button
       onClick={toggleMenu}
-      className="flex flex-row-reverse items-center gap-2"
+      className="absolute -right-28 top-4 flex flex-row-reverse items-center gap-2"
     >
       <p
         className={`text-lg text-gray-50 opacity-0 transition-opacity ease-in-out ${menuIsOpen ? "opacity-O" : "opacity-100"}`}

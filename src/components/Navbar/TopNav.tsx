@@ -8,7 +8,7 @@ const TopNav = () => {
     >
       {/* LOGO */}
       <img
-        src="./Tekkare_picto.svg"
+        src="/Tekkare_picto.svg"
         alt="Logo Tekkare"
         className="w-10 min-w-10"
       />
