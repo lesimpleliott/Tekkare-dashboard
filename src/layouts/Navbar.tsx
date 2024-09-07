@@ -12,7 +12,7 @@ const Navbar = () => {
       <MenuToggleButton />
 
       <nav
-        className={`flex h-full min-h-dvh flex-col gap-4 overflow-hidden bg-gray-100 py-5 shadow-2xl shadow-black transition-all duration-300 ease-in-out ${menuIsOpen ? "w-14 md:w-56" : "w-0 md:w-14 lg:w-14"} `}
+        className={`flex h-full min-h-dvh flex-col gap-4 overflow-hidden bg-gray-100 py-5 shadow-2xl shadow-black transition-all duration-300 ease-in-out ${menuIsOpen ? "w-14 md:w-56" : "w-0 md:w-14 xl:w-56"} `}
       >
         <TopNav />
         <Hospitals />

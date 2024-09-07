@@ -9,14 +9,8 @@ const MenuToggleButton = () => {
   return (
     <button
       onClick={toggleMenu}
-      className="absolute -right-28 top-4 flex flex-row-reverse items-center gap-2"
+      className="absolute -right-14 top-4 flex flex-row items-center gap-2 md:-right-28 xl:hidden"
     >
-      <p
-        className={`text-lg text-gray-50 opacity-0 transition-opacity ease-in-out ${menuIsOpen ? "opacity-O" : "opacity-100"}`}
-      >
-        Menu
-      </p>
-
       <div className="cta flex h-10 w-10 flex-col items-center justify-center gap-[4px] rounded-md p-1.5 shadow-cta-blue">
         <span
           className={`duration-250 block h-[2px] w-full rounded bg-gray-50 transition-transform ease-in-out ${menuIsOpen ? "translate-y-[6px] rotate-45 transform" : ""}`}
@@ -28,6 +22,12 @@ const MenuToggleButton = () => {
           className={`duration-250 block h-[2px] w-full rounded bg-gray-50 transition-transform ease-in-out ${menuIsOpen ? "-translate-y-[6px] -rotate-45 transform" : ""}`}
         ></span>
       </div>
+
+      <p
+        className={`hidden text-lg text-gray-50 opacity-0 transition-opacity ease-in-out md:block ${menuIsOpen ? "opacity-O" : "opacity-100"}`}
+      >
+        Menu
+      </p>
     </button>
   );
 };
