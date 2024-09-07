@@ -1,5 +1,8 @@
 {
   "language": "English",
   "welcomeMessage": "Welcome to Tekkare!",
-  "resume": "My resume"
+  "resume": "My resume",
+  "doctors": "doctors",
+  "nurses": "nurses",
+  "patients": "patients"
 }

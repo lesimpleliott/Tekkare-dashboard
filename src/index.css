@@ -10,6 +10,10 @@ body {
   font-family: "Figtree", sans-serif;
 }
 
+main {
+  @apply flex flex-1 flex-col gap-2 overflow-y-scroll p-4
+}
+
 .cta {
   @apply rounded-full border-4 border-transparent border-l-primary border-r-secondary bg-primary bg-gradient-to-r from-primary to-secondary font-medium transition duration-200 ease-in-out hover:shadow-transparent;
 }

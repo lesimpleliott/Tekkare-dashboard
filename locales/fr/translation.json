@@ -1,5 +1,8 @@
 {
   "language": "Français",
   "welcomeMessage": "Bienvenue sur Tekkare !",
-  "resume": "Mon CV"
+  "resume": "Mon CV",
+  "doctors": "docteurs",
+  "nurses": "infirmier(e)s",
+  "patients": "patients"
 }
