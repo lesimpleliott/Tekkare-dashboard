@@ -10,8 +10,8 @@ const HospitalMenu = ({ hospital }: { hospital: HospitalData }) => {
     >
       {/* ICONE */}
       <div className="flex h-10 w-10 min-w-10 items-center justify-center rounded-full border border-blue-200 bg-blue-50 p-2 shadow-lg">
-        <p className="text-lg font-bold text-blue-900/30">
-          {hospital.location.slice(0, 2)}
+        <p className="font-semibold uppercase tracking-tighter text-blue-900/30">
+          {hospital.location.slice(0, 3)}
         </p>
       </div>
 
