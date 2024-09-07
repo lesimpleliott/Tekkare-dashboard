@@ -1,4 +1,4 @@
-import useStoreMenu from "../stores/menu.store";
+import useStoreMenu from "../../stores/menu.store";
 
 const MenuToggleButton = () => {
   const { menuIsOpen, setMenuIsOpen } = useStoreMenu();

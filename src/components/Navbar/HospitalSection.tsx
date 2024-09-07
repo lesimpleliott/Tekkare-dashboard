@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useHospitalStore } from "../../stores/datas.store";
-import HospitalMenu from "./HospitalMenu";
+import HospitalMenu from "./HospitalMenuTitle";
 
 const Hospitals = () => {
   const hospitals = useHospitalStore((state) => state.hospitals);

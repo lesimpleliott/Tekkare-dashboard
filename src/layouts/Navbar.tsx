@@ -1,5 +1,5 @@
-import MenuToggleButton from "../components/MenuToggleButton";
-import Hospitals from "../components/Navbar/Hospitals";
+import Hospitals from "../components/Navbar/HospitalSection";
+import MenuToggleButton from "../components/Navbar/MenuToggleButton";
 import Settings from "../components/Navbar/Settings";
 import TopNav from "../components/Navbar/TopNav";
 import useStoreMenu from "../stores/menu.store";
