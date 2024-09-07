@@ -1,5 +1,6 @@
 [
   {
+    "id": "Paris-StJean",
     "name": "Hôpital Saint-Jean",
     "location": "Paris, France",
     "overview": {
@@ -107,6 +108,7 @@
     ]
   },
   {
+    "id": "Lyon-Lumiere",
     "name": "Hôpital Lumière",
     "location": "Lyon, France",
     "overview": {
@@ -214,6 +216,7 @@
     ]
   },
   {
+    "id": "Marseille-Midi",
     "name": "Hôpital du Midi",
     "location": "Marseille, France",
     "overview": {
@@ -321,6 +324,7 @@
     ]
   },
   {
+    "id": "Lille-Nord",
     "name": "Hôpital du Nord",
     "location": "Lille, France",
     "overview": {
@@ -424,6 +428,114 @@
         "department": "Neurologie",
         "patientsPerDay": 60,
         "averageWaitTime": "38 min"
+      }
+    ]
+  },
+  {
+    "id": "Bordeaux-Sud",
+    "name": "Hôpital du Sud",
+    "location": "Bordeaux, France",
+    "overview": {
+      "totalPatients": 9500,
+      "satisfactionRate": "84%",
+      "totalTreatments": 7200,
+      "numberOfDoctors": 120,
+      "numberOfNurses": 240
+    },
+    "monthlyHospitalizations": [
+      { "month": "Jan", "year": 2023, "value": 1100 },
+      { "month": "Feb", "year": 2023, "value": 1200 },
+      { "month": "Mar", "year": 2023, "value": 1300 },
+      { "month": "Apr", "year": 2023, "value": 1400 },
+      { "month": "May", "year": 2023, "value": 1500 },
+      { "month": "Jun", "year": 2023, "value": 1600 },
+      { "month": "Jul", "year": 2023, "value": 1700 },
+      { "month": "Aug", "year": 2023, "value": 1800 },
+      { "month": "Sep", "year": 2023, "value": 1900 },
+      { "month": "Oct", "year": 2023, "value": 2000 },
+      { "month": "Nov", "year": 2023, "value": 2100 },
+      { "month": "Dec", "year": 2023, "value": 2200 },
+      { "month": "Jan", "year": 2024, "value": 1100 },
+      { "month": "Feb", "year": 2024, "value": 1200 },
+      { "month": "Mar", "year": 2024, "value": 1300 },
+      { "month": "Apr", "year": 2024, "value": 1400 },
+      { "month": "May", "year": 2024, "value": 1500 },
+      { "month": "Jun", "year": 2024, "value": 1600 },
+      { "month": "Jul", "year": 2024, "value": 1700 },
+      { "month": "Aug", "year": 2024, "value": 1800 }
+    ],
+    "doctorSpecialties": [
+      {
+        "specialty": "Cardiologie",
+        "numberOfDoctors": 90,
+        "satisfactionRate": "85%"
+      },
+      {
+        "specialty": "Neurologie",
+        "numberOfDoctors": 65,
+        "satisfactionRate": "79%"
+      },
+      {
+        "specialty": "Oncologie",
+        "numberOfDoctors": 50,
+        "satisfactionRate": "73%"
+      },
+      {
+        "specialty": "Pédiatrie",
+        "numberOfDoctors": 75,
+        "satisfactionRate": "64%"
+      },
+      {
+        "specialty": "Médecine Générale",
+        "numberOfDoctors": 125,
+        "satisfactionRate": "86%"
+      }
+    ],
+    "clinicalTrials": [
+      {
+        "name": "Trial Q",
+        "status": "En cours",
+        "startDate": "2023-05-01",
+        "endDate": "2025-04-30",
+        "totalPatients": 290
+      },
+      {
+        "name": "Trial R",
+        "status": "Terminé",
+        "startDate": "2023-05-01",
+        "endDate": "2023-10-31",
+        "totalPatients": 400
+      },
+      {
+        "name": "Trial S",
+        "status": "Terminé",
+        "startDate": "2023-05-01",
+        "endDate": "2023-10-31",
+        "totalPatients": 1400
+      },
+      {
+        "name": "Trial T",
+        "status": "En cours",
+        "startDate": "2023-05-01",
+        "endDate": "2024-08-31",
+        "totalPatients": 1050
+      }
+    ],
+    "hospitalDepartments": [
+      {
+        "department": "Urgences",
+        "patientsPerDay": 145,
+        "averageWaitTime": "48 min"
+      },
+      {
+        "department": "Cardiologie",
+        "patientsPerDay": 70,
+        "averageWaitTime": "30 min"
+      },
+      {
+        "department": "Neurologie",
+        "patientsPerDay": 50,
+        "averageWaitTime": "36 min"
       }
     ]
   }
