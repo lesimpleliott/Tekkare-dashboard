@@ -15,7 +15,7 @@ const resources = {
 i18n.use(initReactI18next).init({
   resources,
   debug: false, // true: active le mode debug
-  lng: "en", // langue par défaut
+  lng: "fr", // langue par défaut
   fallbackLng: "fr", // langue par défaut si la langue actuelle n'est pas disponible
   interpolation: {
     escapeValue: false,

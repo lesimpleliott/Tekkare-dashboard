@@ -7,10 +7,12 @@ const Settings = () => {
   const toggleLanguageChange = () => {
     const lang = i18n.i18n.language === "fr" ? "en" : "fr";
     i18n.i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
   };
 
   return (
     <section className="flex flex-col items-center justify-center">
+      {/* NOTIFICATIONS */}
       <a
         href="https://elegarage.fr/CV_LesimpleEliott.pdf"
         target="_blank"
@@ -26,10 +28,11 @@ const Settings = () => {
         </p>
       </a>
 
+      {/* USER PROFIL */}
       <a
         href="https://elegarage.fr"
         target="_blank"
-        className=" flex w-full items-center justify-start gap-2 rounded-md p-2 hover:bg-gray-200"
+        className="flex w-full items-center justify-start gap-2 rounded-md p-2 hover:bg-gray-200"
       >
         <img
           src="/eliott.webp"
@@ -41,6 +44,7 @@ const Settings = () => {
         </p>
       </a>
 
+      {/* LANGUAGE */}
       <div
         onClick={() => toggleLanguageChange()}
         className="flex w-full cursor-pointer items-center justify-start hover:bg-gray-200"
