@@ -12,6 +12,7 @@ const Hospital = () => {
   const hospital = hospitals.find((hospital) => hospital.id === hospitalId);
   const { t } = useTranslation();
 
+  // Si l'hôpital n'existe pas ou n'est pas trouvé
   if (!hospital) {
     return (
       <main>
@@ -19,12 +20,15 @@ const Hospital = () => {
       </main>
     );
   }
+
   return (
     <main>
       <MainTitle
         title={hospital.name[i18n.language as keyof typeof hospital.name]}
+        subtitle={hospital.location}
       />
 
+      {/* Affichage des KPIs */}
       <section className="flex flex-row flex-wrap justify-center gap-2">
         <KPICard
           icon="fa-solid fa-user-doctor"
@@ -43,6 +47,8 @@ const Hospital = () => {
         />
       </section>
 
+      {/* ~~/~/~/ ToDo \~\~\~~ */}
+      {/* Affichage des graphiques  */}
       <section>
         <h3>
           {hospital.name[i18n.language as keyof typeof hospital.name]} - Charts

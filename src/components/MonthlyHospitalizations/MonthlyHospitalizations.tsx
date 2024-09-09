@@ -75,7 +75,10 @@ const MonthlyHospitalizations = () => {
   return (
     <section className="h-[400px]">
       <div className="mt-6 flex flex-col items-center justify-center gap-x-4 gap-y-2 pb-4 sm:flex-row sm:justify-between">
+        {/* Titre */}
         <h2>{t("monthlyHospitalizations")}</h2>
+
+        {/* Filter Buttons */}
         <div className="flex justify-end gap-2">
           {years.map((year, index) => (
             <button
@@ -89,6 +92,7 @@ const MonthlyHospitalizations = () => {
         </div>
       </div>
 
+      {/* Graphique */}
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={filteredData}>
           <CartesianGrid strokeDasharray="3 3" fill="#000" fillOpacity={0.4} />
