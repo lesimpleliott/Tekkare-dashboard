@@ -11,6 +11,7 @@ import {
   YAxis,
 } from "recharts";
 import { useHospitalStore } from "../../stores/datas.store";
+import i18n from "../../utils/i18n";
 import CustomTooltip from "./CustomToolTip";
 
 const MonthlyHospitalizations = () => {
@@ -51,7 +52,8 @@ const MonthlyHospitalizations = () => {
         const hospitalData = hospital.monthlyHospitalizations.find(
           (m) => m.month === month && m.year === selectedYear,
         );
-        monthData[hospital.name] = hospitalData ? hospitalData.value : 0;
+        monthData[hospital.name[i18n.language as keyof typeof hospital.name]] =
+          hospitalData ? hospitalData.value : 0;
       });
 
       return monthData;
@@ -103,7 +105,9 @@ const MonthlyHospitalizations = () => {
             <Line
               key={hospital.id}
               type="monotone"
-              dataKey={hospital.name}
+              dataKey={
+                hospital.name[i18n.language as keyof typeof hospital.name]
+              }
               stroke={`var(--hospital${index + 1})`}
               activeDot={{ r: 8 }}
               name={hospital.location.replace(/, France/, "")}

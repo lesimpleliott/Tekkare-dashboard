@@ -29,7 +29,7 @@ const Settings = () => {
       <a
         href="https://elegarage.fr"
         target="_blank"
-        className="flex w-full items-center justify-start gap-2 rounded-md p-2 hover:bg-gray-200"
+        className=" flex w-full items-center justify-start gap-2 rounded-md p-2 hover:bg-gray-200"
       >
         <img
           src="/eliott.webp"
@@ -41,13 +41,15 @@ const Settings = () => {
         </p>
       </a>
 
-      <div className="flex w-full items-center justify-start hover:bg-gray-200">
+      <div
+        onClick={() => toggleLanguageChange()}
+        className="flex w-full cursor-pointer items-center justify-start hover:bg-gray-200"
+      >
         <div className="flex items-center gap-2 rounded-md p-2">
           <img
-            onClick={() => toggleLanguageChange()}
             src={`/flags/${i18n.i18n.language}.svg`}
             alt={t("language")}
-            className="h-10 min-w-10 cursor-pointer rounded-full object-cover shadow-lg"
+            className="h-10 min-w-10 rounded-full object-cover shadow-lg"
           />
 
           <p className="hidden overflow-hidden truncate whitespace-nowrap md:block">

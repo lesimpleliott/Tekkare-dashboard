@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import KPICard from "../components/KPICard";
 import MainTitle from "../components/MainTitle";
 import { useHospitalStore } from "../stores/datas.store";
+import i18n from "../utils/i18n";
 
 const Hospital = () => {
   const hospitals = useHospitalStore((state) => state.hospitals);
@@ -20,7 +21,9 @@ const Hospital = () => {
   }
   return (
     <main>
-      <MainTitle title={hospital.name} />
+      <MainTitle
+        title={hospital.name[i18n.language as keyof typeof hospital.name]}
+      />
 
       <section className="flex flex-row flex-wrap justify-center gap-2">
         <KPICard
@@ -41,7 +44,10 @@ const Hospital = () => {
       </section>
 
       <section>
-        <h3>{hospital.name} - Charts space</h3>
+        <h3>
+          {hospital.name[i18n.language as keyof typeof hospital.name]} - Charts
+          space
+        </h3>
       </section>
     </main>
   );

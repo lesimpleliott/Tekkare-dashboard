@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { HospitalData } from "../../types/hospitalType";
 
-const HospitalMenu = ({ hospital }: { hospital: HospitalData }) => {
+const HospitalMenuTitle = ({ hospital }: { hospital: HospitalData }) => {
+  const { i18n } = useTranslation();
+
   return (
     <NavLink
       to={`/hospital/${hospital.id}`}
@@ -18,7 +21,7 @@ const HospitalMenu = ({ hospital }: { hospital: HospitalData }) => {
       {/* TEXTE */}
       <div className="flex h-full w-full flex-col justify-end leading-4">
         <p className="hidden overflow-hidden truncate whitespace-nowrap font-bold text-gray-600 md:block">
-          {hospital.name}
+          {hospital.name[i18n.language as keyof typeof hospital.name]}
         </p>
         <p className="hidden overflow-hidden truncate whitespace-nowrap text-sm text-gray-400 md:block">
           {hospital.location}
@@ -28,4 +31,4 @@ const HospitalMenu = ({ hospital }: { hospital: HospitalData }) => {
   );
 };
 
-export default HospitalMenu;
+export default HospitalMenuTitle;

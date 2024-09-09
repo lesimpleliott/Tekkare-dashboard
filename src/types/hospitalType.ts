@@ -1,6 +1,9 @@
 export type HospitalData = {
   id: string;
-  name: string;
+  name: {
+    fr: string;
+    en: string;
+  };
   location: string;
   overview: {
     totalPatients: number;

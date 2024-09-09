@@ -1,7 +1,10 @@
 [
   {
     "id": "Paris-StJean",
-    "name": "Hôpital Saint-Jean",
+    "name": {
+      "fr": "Hôpital Saint-Jean",
+      "en": "Saint-Jean Hospital"
+    },
     "location": "Paris, France",
     "overview": {
       "totalPatients": 12489,
@@ -122,7 +125,10 @@
   },
   {
     "id": "Lyon-Lumiere",
-    "name": "Hôpital Lumière",
+    "name": {
+      "fr": "Hôpital Lumière",
+      "en": "Lumière Hospital"
+    },
     "location": "Lyon, France",
     "overview": {
       "totalPatients": 9334,
@@ -242,7 +248,10 @@
   },
   {
     "id": "Marseille-VieuxPort",
-    "name": "Hôpital du Vieux Port",
+    "name": {
+      "fr": "Hôpital du Vieux-Port",
+      "en": "Vieux-Port Hospital"
+    },
     "location": "Marseille, France",
     "overview": {
       "totalPatients": 10248,
@@ -362,7 +371,10 @@
   },
   {
     "id": "Lille-Belleville",
-    "name": "Hôpital Belleville",
+    "name": {
+      "fr": "Hôpital Belleville",
+      "en": "Belleville Hospital"
+    },
     "location": "Lille, France",
     "overview": {
       "totalPatients": 8687,
@@ -482,7 +494,10 @@
   },
   {
     "id": "Nice-Etoile",
-    "name": "Hôpital Étoile",
+    "name": {
+      "fr": "Hôpital Étoile",
+      "en": "Étoile Hospital"
+    },
     "location": "Nice, France",
     "overview": {
       "totalPatients": 10552,
