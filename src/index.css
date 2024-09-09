@@ -5,13 +5,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --hospital1: #ff5733;
+  --hospital2: #33ff57;
+  --hospital3: #3357ff;
+  --hospital4: #ff33a1;
+  --hospital5: #a133ff;
+  --hospital6: #ffa133;
+  --hospital7: #33ffa1;
+  --hospital8: #ff33e4;
+  --hospital9: #33a1ff;
+  --hospital10: #ff3357;
+}
+
 body {
   @apply bg-main-500;
   font-family: "Figtree", sans-serif;
 }
 
 main {
-  @apply flex flex-1 flex-col gap-2 overflow-y-scroll p-4;
+  @apply flex flex-1 flex-col gap-3 overflow-y-scroll p-4;
 }
 
 .cta {
@@ -20,6 +33,13 @@ main {
 
 .KPICard {
   @apply text-main-500 rounded-md bg-gray-50 px-4 py-4 shadow-lg;
+}
+
+.filterButton {
+  @apply rounded-full border-2 border-gray-100  py-1 px-4 text-gray-100;
+}
+.filterButton.active {
+  @apply bg-main-300 font-bold;
 }
 
 .active.hospitalLink::after {
