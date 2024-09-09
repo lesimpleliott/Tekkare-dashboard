@@ -8,6 +8,9 @@
   "satisfactionRate": "Satisfaction Rate",
   "overview": "Overview",
   "monthlyHospitalizations": "Monthly Hospitalization",
+  "doctorSpecialties": "Doctor Specialties",
+  "numberOfDoctors": "Number of Doctors",
+  "averageDoctors": "Global Average",
   "months": {
     "Jan": "January",
     "Feb": "February",

@@ -8,6 +8,9 @@
   "satisfactionRate": "Taux de satisfaction",
   "overview": "Vue d'ensemble",
   "monthlyHospitalizations": "Hospitalisation mensuelle",
+  "doctorSpecialties": "Spécialités des médecins",
+  "numberOfDoctors": "Nombre de médecins",
+  "averageDoctors": "Moyenne générale",
   "months": {
     "Jan": "Janvier",
     "Feb": "Février",

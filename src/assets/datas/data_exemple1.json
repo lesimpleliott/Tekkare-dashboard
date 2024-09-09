@@ -10,7 +10,7 @@
       "totalPatients": 12489,
       "satisfactionRate": "87%",
       "totalTreatments": 8900,
-      "numberOfDoctors": 138,
+      "numberOfDoctors": 140,
       "numberOfNurses": 264
     },
     "monthlyHospitalizations": [
@@ -50,27 +50,42 @@
 
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
+        "specialty": {
+          "fr": "Cardiologie",
+          "en": "Cardiology"
+        },
         "numberOfDoctors": 30,
         "satisfactionRate": "92%"
       },
       {
-        "specialty": "Neurologie",
+        "specialty": {
+          "fr": "Neurologie",
+          "en": "Neurology"
+        },
         "numberOfDoctors": 20,
         "satisfactionRate": "85%"
       },
       {
-        "specialty": "Oncologie",
+        "specialty": {
+          "fr": "Oncologie",
+          "en": "Oncology"
+        },
         "numberOfDoctors": 25,
         "satisfactionRate": "78%"
       },
       {
-        "specialty": "Pédiatrie",
+        "specialty": {
+          "fr": "Pédiatrie",
+          "en": "Pediatrics"
+        },
         "numberOfDoctors": 35,
         "satisfactionRate": "88%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": {
+          "fr": "Médecine Générale",
+          "en": "General Medicine"
+        },
         "numberOfDoctors": 30,
         "satisfactionRate": "91%"
       }
@@ -173,27 +188,42 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
+        "specialty": {
+          "fr": "Cardiologie",
+          "en": "Cardiology"
+        },
         "numberOfDoctors": 25,
         "satisfactionRate": "90%"
       },
       {
-        "specialty": "Neurologie",
+        "specialty": {
+          "fr": "Neurologie",
+          "en": "Neurology"
+        },
         "numberOfDoctors": 15,
         "satisfactionRate": "80%"
       },
       {
-        "specialty": "Oncologie",
-        "numberOfDoctors": 20,
+        "specialty": {
+          "fr": "Oncologie",
+          "en": "Oncology"
+        },
+        "numberOfDoctors": 19,
         "satisfactionRate": "75%"
       },
       {
-        "specialty": "Pédiatrie",
-        "numberOfDoctors": 25,
+        "specialty": {
+          "fr": "Pédiatrie",
+          "en": "Pediatrics"
+        },
+        "numberOfDoctors": 24,
         "satisfactionRate": "85%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": {
+          "fr": "Médecine Générale",
+          "en": "General Medicine"
+        },
         "numberOfDoctors": 15,
         "satisfactionRate": "88%"
       }
@@ -296,27 +326,42 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
+        "specialty": {
+          "fr": "Cardiologie",
+          "en": "Cardiology"
+        },
         "numberOfDoctors": 28,
         "satisfactionRate": "88%"
       },
       {
-        "specialty": "Neurologie",
+        "specialty": {
+          "fr": "Neurologie",
+          "en": "Neurology"
+        },
         "numberOfDoctors": 18,
         "satisfactionRate": "82%"
       },
       {
-        "specialty": "Oncologie",
+        "specialty": {
+          "fr": "Oncologie",
+          "en": "Oncology"
+        },
         "numberOfDoctors": 22,
         "satisfactionRate": "77%"
       },
       {
-        "specialty": "Pédiatrie",
+        "specialty": {
+          "fr": "Pédiatrie",
+          "en": "Pediatrics"
+        },
         "numberOfDoctors": 30,
         "satisfactionRate": "85%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": {
+          "fr": "Médecine Générale",
+          "en": "General Medicine"
+        },
         "numberOfDoctors": 12,
         "satisfactionRate": "84%"
       }
@@ -419,27 +464,42 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
-        "numberOfDoctors": 20,
+        "specialty": {
+          "fr": "Cardiologie",
+          "en": "Cardiology"
+        },
+        "numberOfDoctors": 22,
         "satisfactionRate": "86%"
       },
       {
-        "specialty": "Neurologie",
-        "numberOfDoctors": 15,
+        "specialty": {
+          "fr": "Neurologie",
+          "en": "Neurology"
+        },
+        "numberOfDoctors": 17,
         "satisfactionRate": "75%"
       },
       {
-        "specialty": "Oncologie",
+        "specialty": {
+          "fr": "Oncologie",
+          "en": "Oncology"
+        },
         "numberOfDoctors": 18,
         "satisfactionRate": "70%"
       },
       {
-        "specialty": "Pédiatrie",
-        "numberOfDoctors": 20,
+        "specialty": {
+          "fr": "Pédiatrie",
+          "en": "Pediatrics"
+        },
+        "numberOfDoctors": 22,
         "satisfactionRate": "80%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": {
+          "fr": "Médecine Générale",
+          "en": "General Medicine"
+        },
         "numberOfDoctors": 17,
         "satisfactionRate": "82%"
       }
@@ -503,7 +563,7 @@
       "totalPatients": 10552,
       "satisfactionRate": "90%",
       "totalTreatments": 8200,
-      "numberOfDoctors": 135,
+      "numberOfDoctors": 125,
       "numberOfNurses": 211
     },
     "monthlyHospitalizations": [
@@ -542,28 +602,43 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
-        "numberOfDoctors": 32,
+        "specialty": {
+          "fr": "Cardiologie",
+          "en": "Cardiology"
+        },
+        "numberOfDoctors": 33,
         "satisfactionRate": "94%"
       },
       {
-        "specialty": "Neurologie",
-        "numberOfDoctors": 22,
+        "specialty": {
+          "fr": "Neurologie",
+          "en": "Neurology"
+        },
+        "numberOfDoctors": 23,
         "satisfactionRate": "88%"
       },
       {
-        "specialty": "Oncologie",
-        "numberOfDoctors": 28,
+        "specialty": {
+          "fr": "Oncologie",
+          "en": "Oncology"
+        },
+        "numberOfDoctors": 29,
         "satisfactionRate": "80%"
       },
       {
-        "specialty": "Pédiatrie",
-        "numberOfDoctors": 25,
+        "specialty": {
+          "fr": "Pédiatrie",
+          "en": "Pediatrics"
+        },
+        "numberOfDoctors": 26,
         "satisfactionRate": "90%"
       },
       {
-        "specialty": "Médecine Générale",
-        "numberOfDoctors": 13,
+        "specialty": {
+          "fr": "Médecine Générale",
+          "en": "General Medicine"
+        },
+        "numberOfDoctors": 14,
         "satisfactionRate": "87%"
       }
     ],

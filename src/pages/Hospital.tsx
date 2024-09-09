@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-
 import KPICard from "../components/KPICard";
 import MainTitle from "../components/MainTitle";
+import DoctorSpecialties from "../components/DoctorSpecialties";
 import { useHospitalStore } from "../stores/datas.store";
 import i18n from "../utils/i18n";
 
@@ -47,14 +47,8 @@ const Hospital = () => {
         />
       </section>
 
-      {/* ~~/~/~/ ToDo \~\~\~~ */}
       {/* Affichage des graphiques  */}
-      <section>
-        <h3>
-          {hospital.name[i18n.language as keyof typeof hospital.name]} - Charts
-          space
-        </h3>
-      </section>
+      <DoctorSpecialties dataSpecialties={hospital.doctorSpecialties} />
     </main>
   );
 };

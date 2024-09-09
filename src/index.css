@@ -28,7 +28,11 @@ main {
 }
 
 h2 {
-  @apply text-nowrap text-2xl font-bold text-gray-50;
+  @apply relative text-nowrap pl-3 text-2xl font-bold text-gray-50;
+}
+h2::before {
+  content: "";
+  @apply from-primary-500 to-secondary-500 absolute left-0 rounded-full top-0 block h-full w-1 bg-gradient-to-t;
 }
 
 .cta {

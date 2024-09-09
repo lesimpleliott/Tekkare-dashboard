@@ -11,11 +11,9 @@ const Overview = () => {
   return (
     <section className="flex flex-col flex-wrap justify-center gap-2">
       {/* Titre section */}
-      <h2 className="flex flex-row items-center justify-center gap-2 pb-2 sm:flex-row sm:justify-start">
-        <i className="fa-solid fa-hospital text-main-300"></i> {t("overview")}
-      </h2>
+      <h2>{t("overview")}</h2>
 
-      <table className="KPICard flex flex-1 flex-col justify-center gap-2 px-4 py-1">
+      <table className="KPICard mt-2 flex flex-1 flex-col justify-center gap-2 px-4 py-1">
         <tbody>
           {hospitals.map((hospital, index) => (
             <tr

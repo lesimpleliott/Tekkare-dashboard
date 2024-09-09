@@ -74,7 +74,7 @@ const MonthlyHospitalizations = () => {
 
   return (
     <section className="h-[400px]">
-      <div className="mt-6 flex flex-col items-center justify-center gap-x-4 gap-y-2 pb-4 sm:flex-row sm:justify-between">
+      <div className="mt-6 flex flex-col items-start justify-center gap-x-4 gap-y-2 pb-4 sm:flex-row sm:justify-between">
         {/* Titre */}
         <h2>{t("monthlyHospitalizations")}</h2>
 
