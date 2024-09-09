@@ -14,6 +14,13 @@ import { useHospitalStore } from "../../stores/datas.store";
 import i18n from "../../utils/i18n";
 import CustomTooltip from "./CustomToolTip";
 
+// Supprimer les erreurs liées aux defaultProps (reCharts issue)
+const error = console.error;
+console.error = (...args: string[]) => {
+  if (/defaultProps/.test(args[0])) return;
+  error(...args);
+};
+
 const MonthlyHospitalizations = () => {
   const hospitals = useHospitalStore((state) => state.hospitals);
   const [selectedYear, setSelectedYear] = useState(2022);
