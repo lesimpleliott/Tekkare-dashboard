@@ -66,11 +66,9 @@ const MonthlyHospitalizations = () => {
   }
 
   return (
-    <section className="h-[500px]">
+    <section className="h-[400px]">
       <div className="mt-6 flex flex-col items-center justify-center gap-x-4 gap-y-2 pb-4 sm:flex-row sm:justify-between">
-        <h2 className="text-nowrap text-xl font-bold text-gray-50">
-          {t("monthlyHospitalizations")}
-        </h2>
+        <h2>{t("monthlyHospitalizations")}</h2>
         <div className="flex justify-end gap-2">
           {years.map((year, index) => (
             <button
@@ -90,7 +88,7 @@ const MonthlyHospitalizations = () => {
           <XAxis
             dataKey="month"
             className="text-sm sm:text-base"
-            padding={{ left: 20, right: 20 }}
+            padding={{ left: 10, right: 10 }}
           />
           <YAxis
             hide={true}

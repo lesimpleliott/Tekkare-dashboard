@@ -1,8 +1,8 @@
-import Hospitals from "../components/Navbar/HospitalSection";
-import MenuToggleButton from "../components/Navbar/MenuToggleButton";
-import Settings from "../components/Navbar/Settings";
-import TopNav from "../components/Navbar/TopNav";
-import useStoreMenu from "../stores/menu.store";
+import useStoreMenu from "../../stores/menu.store";
+import Hospitals from "./HospitalSection";
+import MenuToggleButton from "./MenuToggleButton";
+import Settings from "./Settings";
+import TopNav from "./TopNav";
 
 const Navbar = () => {
   const { menuIsOpen } = useStoreMenu();
