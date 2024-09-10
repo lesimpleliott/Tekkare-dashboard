@@ -11,6 +11,12 @@
   "doctorSpecialties": "Spécialités des médecins",
   "numberOfDoctors": "Nombre de médecins",
   "averageDoctors": "Moyenne générale",
+  "clinicalTrials": "Essais cliniques",
+  "startDate": "Date de début :",
+  "endDate": "Date de fin :",
+  "status.completed": "Terminé",
+  "status.inProgress": "En cours",
+  "status.all": "Tous",
   "months": {
     "Jan": "Janvier",
     "Feb": "Février",

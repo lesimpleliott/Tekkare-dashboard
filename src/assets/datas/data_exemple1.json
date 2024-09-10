@@ -92,32 +92,59 @@
     ],
     "clinicalTrials": [
       {
-        "name": "Trial 1",
-        "status": "En cours",
-        "startDate": "2023-01-01",
-        "endDate": "2025-06-30",
-        "totalPatients": 150
+        "trialId": "TR001",
+        "name": {
+          "fr": "Essai clinique sur un vaccin contre la grippe saisonnière",
+          "en": "Clinical Trial on a Vaccine for Seasonal Influenza"
+        },
+        "startDate": "2023-01-15",
+        "endDate": "2024-06-30",
+        "principalInvestigator": "Dr. Isabelle Martin",
+        "participants": 120
       },
       {
-        "name": "Trial 2",
-        "status": "Terminé",
-        "startDate": "2023-01-01",
-        "endDate": "2023-06-30",
-        "totalPatients": 300
+        "trialId": "TR002",
+        "name": {
+          "fr": "Étude sur un nouveau traitement pour l'asthme",
+          "en": "Study on a New Treatment for Asthma"
+        },
+        "startDate": "2022-06-01",
+        "endDate": "2023-11-15",
+        "principalInvestigator": "Dr. Pierre Dubois",
+        "participants": 90
       },
       {
-        "name": "Trial 3",
-        "status": "Terminé",
-        "startDate": "2023-01-01",
-        "endDate": "2023-06-30",
-        "totalPatients": 900
+        "trialId": "TR003",
+        "name": {
+          "fr": "Recherche sur un médicament pour le diabète de type 2",
+          "en": "Research on a Drug for Type 2 Diabetes"
+        },
+        "startDate": "2021-04-10",
+        "endDate": "2023-03-05",
+        "principalInvestigator": "Dr. Laura Dupont",
+        "participants": 200
       },
       {
-        "name": "Trial 4",
-        "status": "En cours",
-        "startDate": "2023-01-01",
-        "endDate": "2024-12-30",
-        "totalPatients": 500
+        "trialId": "TR004",
+        "name": {
+          "fr": "Essai clinique pour un traitement contre la dépression",
+          "en": "Clinical Trial for a Treatment for Depression"
+        },
+        "startDate": "2022-08-20",
+        "endDate": "2025-02-28",
+        "principalInvestigator": "Dr. Thomas Lefèvre",
+        "participants": 150
+      },
+      {
+        "trialId": "TR005",
+        "name": {
+          "fr": "Étude sur un nouveau médicament contre le cancer du poumon",
+          "en": "Study on a New Drug for Lung Cancer"
+        },
+        "startDate": "2023-05-10",
+        "endDate": "2024-10-15",
+        "principalInvestigator": "Dr. Claire Petit",
+        "participants": 75
       }
     ],
     "hospitalDepartments": [
@@ -230,32 +257,59 @@
     ],
     "clinicalTrials": [
       {
-        "name": "Trial A",
-        "status": "En cours",
-        "startDate": "2023-02-01",
-        "endDate": "2025-01-31",
-        "totalPatients": 100
+        "trialId": "TR006",
+        "name": {
+          "fr": "Essai sur une thérapie génique pour la fibrose kystique",
+          "en": "Trial on Gene Therapy for Cystic Fibrosis"
+        },
+        "startDate": "2021-09-01",
+        "endDate": "2024-09-30",
+        "principalInvestigator": "Dr. Alain Bernard",
+        "participants": 110
       },
       {
-        "name": "Trial B",
-        "status": "Terminé",
-        "startDate": "2023-02-01",
-        "endDate": "2023-09-30",
-        "totalPatients": 250
+        "trialId": "TR007",
+        "name": {
+          "fr": "Recherche sur un traitement pour les maladies cardiovasculaires",
+          "en": "Research on a Treatment for Cardiovascular Diseases"
+        },
+        "startDate": "2022-01-15",
+        "endDate": "2025-12-15",
+        "principalInvestigator": "Dr. Marie-Claude Gautier",
+        "participants": 180
       },
       {
-        "name": "Trial C",
-        "status": "Terminé",
-        "startDate": "2023-03-01",
-        "endDate": "2023-10-31",
-        "totalPatients": 800
+        "trialId": "TR008",
+        "name": {
+          "fr": "Essai clinique pour une nouvelle approche contre la sclérose en plaques",
+          "en": "Clinical Trial for a New Approach to Multiple Sclerosis"
+        },
+        "startDate": "2022-11-01",
+        "endDate": "2024-03-31",
+        "principalInvestigator": "Dr. Jacques Lefrançois",
+        "participants": 95
       },
       {
-        "name": "Trial D",
-        "status": "En cours",
-        "startDate": "2023-03-01",
-        "endDate": "2024-12-31",
-        "totalPatients": 450
+        "trialId": "TR009",
+        "name": {
+          "fr": "Étude sur un traitement expérimental pour la maladie d'Alzheimer",
+          "en": "Study on an Experimental Treatment for Alzheimer’s Disease"
+        },
+        "startDate": "2020-10-15",
+        "endDate": "2022-09-30",
+        "principalInvestigator": "Dr. Sophie Moreau",
+        "participants": 160
+      },
+      {
+        "trialId": "TR010",
+        "name": {
+          "fr": "Essai sur un nouveau médicament pour les troubles bipolaires",
+          "en": "Trial on a New Drug for Bipolar Disorder"
+        },
+        "startDate": "2021-12-01",
+        "endDate": "2023-08-31",
+        "principalInvestigator": "Dr. Lucas Charpentier",
+        "participants": 130
       }
     ],
     "hospitalDepartments": [
@@ -368,32 +422,59 @@
     ],
     "clinicalTrials": [
       {
-        "name": "Trial X",
-        "status": "En cours",
-        "startDate": "2023-03-01",
-        "endDate": "2025-02-28",
-        "totalPatients": 200
+        "trialId": "TR011",
+        "name": {
+          "fr": "Recherche sur un traitement pour les infections chroniques",
+          "en": "Research on a Treatment for Chronic Infections"
+        },
+        "startDate": "2022-03-01",
+        "endDate": "2024-01-15",
+        "principalInvestigator": "Dr. Hélène Bernard",
+        "participants": 140
       },
       {
-        "name": "Trial Y",
-        "status": "Terminé",
-        "startDate": "2023-03-01",
-        "endDate": "2023-11-30",
-        "totalPatients": 400
-      },
-      {
-        "name": "Trial Z",
-        "status": "Terminé",
+        "trialId": "TR012",
+        "name": {
+          "fr": "Essai clinique pour un traitement contre l'ostéoporose",
+          "en": "Clinical Trial for a Treatment for Osteoporosis"
+        },
         "startDate": "2023-04-01",
-        "endDate": "2023-12-31",
-        "totalPatients": 1000
+        "endDate": "2024-12-31",
+        "principalInvestigator": "Dr. Antoine Dubois",
+        "participants": 100
       },
       {
-        "name": "Trial W",
-        "status": "En cours",
-        "startDate": "2023-05-01",
-        "endDate": "2024-11-30",
-        "totalPatients": 600
+        "trialId": "TR013",
+        "name": {
+          "fr": "Étude sur un nouveau traitement pour les migraines",
+          "en": "Study on a New Treatment for Migraines"
+        },
+        "startDate": "2021-07-15",
+        "endDate": "2023-04-30",
+        "principalInvestigator": "Dr. Julie Lefevre",
+        "participants": 85
+      },
+      {
+        "trialId": "TR014",
+        "name": {
+          "fr": "Essai clinique pour un traitement du cancer du sein",
+          "en": "Clinical Trial for a Breast Cancer Treatment"
+        },
+        "startDate": "2020-12-10",
+        "endDate": "2022-08-15",
+        "principalInvestigator": "Dr. Vincent Germain",
+        "participants": 140
+      },
+      {
+        "trialId": "TR015",
+        "name": {
+          "fr": "Recherche sur un traitement pour les troubles de l'anxiété",
+          "en": "Research on a Treatment for Anxiety Disorders"
+        },
+        "startDate": "2022-05-01",
+        "endDate": "2024-07-15",
+        "principalInvestigator": "Dr. Claire Martin",
+        "participants": 125
       }
     ],
     "hospitalDepartments": [
@@ -506,32 +587,48 @@
     ],
     "clinicalTrials": [
       {
-        "name": "Trial 5",
-        "status": "En cours",
-        "startDate": "2023-04-01",
-        "endDate": "2025-03-31",
-        "totalPatients": 180
+        "trialId": "TR016",
+        "name": {
+          "fr": "Essai sur un médicament pour les maladies auto-immunes",
+          "en": "Trial on a Drug for Autoimmune Diseases"
+        },
+        "startDate": "2021-01-10",
+        "endDate": "2022-11-30",
+        "principalInvestigator": "Dr. François Duchamp",
+        "participants": 115
       },
       {
-        "name": "Trial 6",
-        "status": "Terminé",
-        "startDate": "2023-05-01",
-        "endDate": "2023-12-31",
-        "totalPatients": 350
+        "trialId": "TR017",
+        "name": {
+          "fr": "Étude clinique pour une thérapie pour les troubles du sommeil",
+          "en": "Clinical Study on a Therapy for Sleep Disorders"
+        },
+        "startDate": "2020-06-01",
+        "endDate": "2022-05-15",
+        "principalInvestigator": "Dr. Alice Brun",
+        "participants": 80
       },
       {
-        "name": "Trial 7",
-        "status": "Terminé",
-        "startDate": "2023-06-01",
-        "endDate": "2023-12-31",
-        "totalPatients": 750
-      },
-      {
-        "name": "Trial 8",
-        "status": "En cours",
+        "trialId": "TR018",
+        "name": {
+          "fr": "Essai clinique pour un nouveau traitement de l'arthrite",
+          "en": "Clinical Trial for a New Arthritis Treatment"
+        },
         "startDate": "2023-07-01",
         "endDate": "2024-11-30",
-        "totalPatients": 550
+        "principalInvestigator": "Dr. Pierre François",
+        "participants": 90
+      },
+      {
+        "trialId": "TR019",
+        "name": {
+          "fr": "Essai de phase 1 sur un médicament pour les maladies rénales chroniques",
+          "en": "Phase 1 Trial on a Drug for Chronic Kidney Diseases"
+        },
+        "startDate": "2023-03-21",
+        "endDate": "2024-08-11",
+        "principalInvestigator": "Dr. Monique Renault",
+        "participants": 60
       }
     ],
     "hospitalDepartments": [
@@ -644,32 +741,70 @@
     ],
     "clinicalTrials": [
       {
-        "name": "Trial 9",
-        "status": "En cours",
-        "startDate": "2023-06-01",
-        "endDate": "2025-05-31",
-        "totalPatients": 250
+        "trialId": "TR020",
+        "name": {
+          "fr": "Étude clinique pour améliorer les greffes de moelle osseuse",
+          "en": "Clinical Study to Improve Bone Marrow Transplants"
+        },
+        "startDate": "2019-09-05",
+        "endDate": "2021-01-28",
+        "principalInvestigator": "Dr. Michel Lefebvre",
+        "participants": 170
       },
       {
-        "name": "Trial 10",
-        "status": "Terminé",
-        "startDate": "2023-07-01",
-        "endDate": "2023-12-31",
-        "totalPatients": 300
+        "trialId": "TR021",
+        "name": {
+          "fr": "Essai clinique sur une thérapie combinée pour le VIH",
+          "en": "Clinical Trial on a Combined Therapy for HIV"
+        },
+        "startDate": "2021-10-23",
+        "endDate": "2022-12-12",
+        "principalInvestigator": "Dr. Jacques Blanchard",
+        "participants": 85
       },
       {
-        "name": "Trial 11",
-        "status": "Terminé",
-        "startDate": "2023-08-01",
-        "endDate": "2023-12-31",
-        "totalPatients": 900
+        "trialId": "TR022",
+        "name": {
+          "fr": "Recherche sur un traitement expérimental pour la leucémie aiguë",
+          "en": "Research on an Experimental Treatment for Acute Leukemia"
+        },
+        "startDate": "2020-04-07",
+        "endDate": "2024-09-20",
+        "principalInvestigator": "Dr. Hélène Rousseau",
+        "participants": 240
       },
       {
-        "name": "Trial 12",
-        "status": "En cours",
-        "startDate": "2023-09-01",
-        "endDate": "2024-12-31",
-        "totalPatients": 500
+        "trialId": "TR023",
+        "name": {
+          "fr": "Étude clinique sur un traitement innovant de la polyarthrite rhumatoïde",
+          "en": "Clinical Study on an Innovative Treatment for Rheumatoid Arthritis"
+        },
+        "startDate": "2022-02-14",
+        "endDate": "2025-07-09",
+        "principalInvestigator": "Dr. Chloé Germain",
+        "participants": 150
+      },
+      {
+        "trialId": "TR024",
+        "name": {
+          "fr": "Essai clinique sur un traitement pour la maladie de Parkinson",
+          "en": "Clinical Trial on a Treatment for Parkinson’s Disease"
+        },
+        "startDate": "2022-09-01",
+        "endDate": "2024-01-31",
+        "principalInvestigator": "Dr. David Lemoine",
+        "participants": 140
+      },
+      {
+        "trialId": "TR025",
+        "name": {
+          "fr": "Recherche sur un médicament pour la maladie de Crohn",
+          "en": "Research on a Drug for Crohn’s Disease"
+        },
+        "startDate": "2021-05-01",
+        "endDate": "2023-11-30",
+        "principalInvestigator": "Dr. Élise Bonnet",
+        "participants": 130
       }
     ],
     "hospitalDepartments": [

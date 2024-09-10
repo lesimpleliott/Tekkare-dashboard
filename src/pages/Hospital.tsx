@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
+import ClinicalTrials from "../components/ClinicalTrials";
+import DoctorSpecialties from "../components/DoctorSpecialties";
 import KPICard from "../components/KPICard";
 import MainTitle from "../components/MainTitle";
-import DoctorSpecialties from "../components/DoctorSpecialties";
 import { useHospitalStore } from "../stores/datas.store";
 import i18n from "../utils/i18n";
 
@@ -49,6 +50,7 @@ const Hospital = () => {
 
       {/* Affichage des graphiques  */}
       <DoctorSpecialties dataSpecialties={hospital.doctorSpecialties} />
+      <ClinicalTrials dataTrials={hospital.clinicalTrials}/>
     </main>
   );
 };

@@ -9,7 +9,7 @@ const MenuToggleButton = () => {
   return (
     <button
       onClick={toggleMenu}
-      className="absolute -right-14 top-4 flex flex-row items-center gap-2 md:-right-28 xl:hidden"
+      className="absolute -right-14 top-4 z-50 flex flex-row items-center gap-2 md:-right-28 xl:hidden"
     >
       {/* Burger button */}
       <div className="cta flex h-10 w-10 flex-col items-center justify-center gap-[4px] rounded-md p-1.5 shadow-cta-blue">
