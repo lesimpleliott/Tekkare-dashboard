@@ -17,6 +17,7 @@
   "status.completed": "Completed",
   "status.inProgress": "In progress",
   "status.all": "All",
+  "hospitalStaff": "Hospital Staff",
   "months": {
     "Jan": "January",
     "Feb": "February",

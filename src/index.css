@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  @apply flex flex-1 flex-col gap-3 overflow-y-scroll p-4;
+  @apply mx-auto flex flex-1 flex-col gap-3 overflow-y-scroll p-4 md:p-8 lg:gap-8;
 }
 
 h2 {
@@ -32,15 +32,15 @@ h2 {
 }
 h2::before {
   content: "";
-  @apply from-primary-500 to-secondary-500 absolute left-0 rounded-full top-0 block h-full w-1 bg-gradient-to-t;
+  @apply absolute left-0 top-0 block h-full w-1 rounded-full bg-gradient-to-t from-primary-500 to-secondary-500;
 }
 
 .cta {
-  @apply bg-primary-500 from-primary-500 to-secondary-500 border-l-primary-500 border-r-secondary-500 rounded-full border-4 border-transparent bg-gradient-to-r font-medium transition duration-200 ease-in-out hover:shadow-transparent;
+  @apply rounded-full border-4 border-transparent border-l-primary-500 border-r-secondary-500 bg-primary-500 bg-gradient-to-r from-primary-500 to-secondary-500 font-medium transition duration-200 ease-in-out hover:shadow-transparent;
 }
 
 .KPICard {
-  @apply text-main-500 rounded-md bg-gray-50 shadow-lg;
+  @apply rounded-md bg-gray-50 text-main-500 shadow-lg;
 }
 
 .filterButton {
@@ -60,5 +60,5 @@ h2::before {
 
 .active.hospitalLink::after {
   content: "";
-  @apply bg-secondary-500 absolute left-0 top-1/2 h-10 w-1 -translate-y-1/2 rounded-r-full;
+  @apply absolute left-0 top-1/2 h-10 w-1 -translate-y-1/2 rounded-r-full bg-secondary-500;
 }

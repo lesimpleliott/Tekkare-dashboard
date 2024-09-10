@@ -8,9 +8,11 @@ const Home = () => {
 
   return (
     <main>
-      <MainTitle title={t("welcomeMessage")} />
-      <Overview />
-      <MonthlyHospitalizations />
+      <div className="mx-auto max-w-5xl">
+        <MainTitle title={t("welcomeMessage")} />
+        <Overview />
+        <MonthlyHospitalizations />
+      </div>
     </main>
   );
 };

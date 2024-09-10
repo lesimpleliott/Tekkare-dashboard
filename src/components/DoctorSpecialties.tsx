@@ -18,8 +18,10 @@ type SpecialtyData = {
 
 const DoctorSpecialties = ({
   dataSpecialties,
+  className,
 }: {
   dataSpecialties: SpecialtyData[];
+  className: string;
 }) => {
   const { t, i18n } = useTranslation();
   const hospitals = useHospitalStore((state) => state.hospitals);
@@ -75,10 +77,10 @@ const DoctorSpecialties = ({
   });
 
   return (
-    <section className="mt-4">
-      <h2>{t("doctorSpecialties")}</h2>
+    <section className={className}>
+      <h2 className="w-fit">{t("doctorSpecialties")}</h2>
 
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height="100%">
         <RadarChart data={combinedData}>
           <PolarGrid />
           <PolarAngleAxis dataKey={`specialty.${i18n.language}`} />
