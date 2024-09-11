@@ -3,6 +3,8 @@
   "welcomeMessage": "Welcome to Tekkare!",
   "resume": "My resume",
 
+  "hospital_one": "Hospital",
+  "hospital_other": "Hospitals",
   "doctor_one": "doctor",
   "doctor_other": "doctors",
   "nurse_one": "nurse",

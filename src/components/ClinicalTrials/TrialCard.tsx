@@ -1,9 +1,18 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 import { clinicalTrialsType } from "../../types/clinicalTrialsType";
 import { calculateProgress } from "../../utils/calculateProgress";
 
-const TrialCard = ({ trial }: { trial: clinicalTrialsType }) => {
+const TrialCard = ({
+  trial,
+  hospital,
+  link,
+}: {
+  trial: clinicalTrialsType;
+  hospital?: string;
+  link?: string;
+}) => {
   const { t, i18n } = useTranslation();
   const progress = calculateProgress(trial.startDate, trial.endDate);
   const isCompleted = progress >= 100;
@@ -15,7 +24,7 @@ const TrialCard = ({ trial }: { trial: clinicalTrialsType }) => {
     <article className="KPICard flex flex-col gap-2 px-4 pt-4">
       <div className="items-between flex justify-between gap-2">
         {/* Titre essai */}
-        <h3 className="mr-10 text-lg font-bold leading-5">
+        <h3 className="w-full pr-10 text-lg font-bold leading-5">
           {String(trial.name[i18n.language as keyof typeof trial.name])}
         </h3>
 
@@ -61,7 +70,8 @@ const TrialCard = ({ trial }: { trial: clinicalTrialsType }) => {
         {/* Trial ID */}
         <div className="">
           <strong>
-            <i className="fa-solid fa-hashtag text-main-200"></i> {t("trialID")}
+            <i className="fa-solid fa-hashtag min-w-4 text-center text-main-200"></i>{" "}
+            {t("trialID")}
             {i18n.language === "fr" ? " : " : ": "}
           </strong>
           {trial.trialId}
@@ -70,7 +80,7 @@ const TrialCard = ({ trial }: { trial: clinicalTrialsType }) => {
         {/* Dates */}
         <p>
           <strong>
-            <i className="fa-solid fa-calendar text-main-200"></i>{" "}
+            <i className="fa-solid fa-calendar min-w-4 text-center text-main-200"></i>{" "}
             {capitalize(t("date"))}
             {i18n.language === "fr" ? " : " : ": "}
           </strong>
@@ -78,10 +88,26 @@ const TrialCard = ({ trial }: { trial: clinicalTrialsType }) => {
           {new Date(trial.endDate).toLocaleDateString()}
         </p>
 
+        {/* Hôpital */}
+        {hospital && link && (
+          <NavLink to={link}>
+            <strong>
+              <i className="fa-solid fa-hospital min-w-4 text-center text-main-200"></i>{" "}
+              {capitalize(
+                t("hospital", {
+                  count: Array.isArray(hospital) ? hospital.length : 1,
+                }),
+              )}
+              {i18n.language === "fr" ? " : " : ": "}
+            </strong>
+            {hospital}
+          </NavLink>
+        )}
+
         {/* Docteur(s) */}
         <div className="">
           <strong>
-            <i className="fa-solid fa-user-doctor text-main-200"></i>{" "}
+            <i className="fa-solid fa-user-doctor min-w-4 text-center text-main-200"></i>{" "}
             {capitalize(
               t("doctor", {
                 count: Array.isArray(trial.investigator)
@@ -99,7 +125,7 @@ const TrialCard = ({ trial }: { trial: clinicalTrialsType }) => {
         {/* Patient */}
         <div className="">
           <strong>
-            <i className="fa-solid fa-user-doctor text-main-200"></i>{" "}
+            <i className="fa-solid fa-hospital-user min-w-4 text-center text-main-200"></i>{" "}
             {capitalize(t("patient", { count: trial.participants }))}
             {i18n.language === "fr" ? " : " : ": "}
           </strong>

@@ -3,6 +3,8 @@
   "welcomeMessage": "Bienvenue sur Tekkare !",
   "resume": "Mon CV",
 
+  "hospital_one": "Hôpital",
+  "hospital_other": "Hôpitaux",
   "doctor_one": "docteur",
   "doctor_other": "docteurs",
   "nurse_one": "infirmier·ère",
