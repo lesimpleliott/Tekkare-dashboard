@@ -99,7 +99,7 @@
         },
         "startDate": "2023-01-15",
         "endDate": "2024-06-30",
-        "principalInvestigator": "Dr. Isabelle Martin",
+        "investigator": ["Dr. Isabelle Martin", "Dr. Jean Lefevre"],
         "participants": 120
       },
       {
@@ -110,7 +110,7 @@
         },
         "startDate": "2022-06-01",
         "endDate": "2023-11-15",
-        "principalInvestigator": "Dr. Pierre Dubois",
+        "investigator": "Dr. Pierre Dubois",
         "participants": 90
       },
       {
@@ -121,7 +121,7 @@
         },
         "startDate": "2021-04-10",
         "endDate": "2023-03-05",
-        "principalInvestigator": "Dr. Laura Dupont",
+        "investigator": "Dr. Laura Dupont",
         "participants": 200
       },
       {
@@ -132,7 +132,7 @@
         },
         "startDate": "2022-08-20",
         "endDate": "2025-02-28",
-        "principalInvestigator": "Dr. Thomas Lefèvre",
+        "investigator": "Dr. Thomas Lefèvre",
         "participants": 150
       },
       {
@@ -143,7 +143,7 @@
         },
         "startDate": "2023-05-10",
         "endDate": "2024-10-15",
-        "principalInvestigator": "Dr. Claire Petit",
+        "investigator": ["Dr. Claire Petit", "Dr. Paul Lefevre"],
         "participants": 75
       }
     ],
@@ -264,7 +264,7 @@
         },
         "startDate": "2021-09-01",
         "endDate": "2024-09-30",
-        "principalInvestigator": "Dr. Alain Bernard",
+        "investigator": ["Dr. Alain Bernard", "Dr. Marie Lefevre"],
         "participants": 110
       },
       {
@@ -275,7 +275,7 @@
         },
         "startDate": "2022-01-15",
         "endDate": "2025-12-15",
-        "principalInvestigator": "Dr. Marie-Claude Gautier",
+        "investigator": "Dr. Marie-Claude Gautier",
         "participants": 180
       },
       {
@@ -286,7 +286,7 @@
         },
         "startDate": "2022-11-01",
         "endDate": "2024-03-31",
-        "principalInvestigator": "Dr. Jacques Lefrançois",
+        "investigator": ["Dr. Jacques Lefrançois", "Dr. Sophie Martin"],
         "participants": 95
       },
       {
@@ -297,7 +297,7 @@
         },
         "startDate": "2020-10-15",
         "endDate": "2022-09-30",
-        "principalInvestigator": "Dr. Sophie Moreau",
+        "investigator": "Dr. Sophie Moreau",
         "participants": 160
       },
       {
@@ -308,7 +308,7 @@
         },
         "startDate": "2021-12-01",
         "endDate": "2023-08-31",
-        "principalInvestigator": "Dr. Lucas Charpentier",
+        "investigator": "Dr. Lucas Charpentier",
         "participants": 130
       }
     ],
@@ -429,7 +429,7 @@
         },
         "startDate": "2022-03-01",
         "endDate": "2024-01-15",
-        "principalInvestigator": "Dr. Hélène Bernard",
+        "investigator": ["Dr. Hélène Bernard", "Dr. Paul Lefevre"],
         "participants": 140
       },
       {
@@ -440,7 +440,7 @@
         },
         "startDate": "2023-04-01",
         "endDate": "2024-12-31",
-        "principalInvestigator": "Dr. Antoine Dubois",
+        "investigator": ["Dr. Antoine Dubois", "Dr. Marie Lefevre"],
         "participants": 100
       },
       {
@@ -451,7 +451,7 @@
         },
         "startDate": "2021-07-15",
         "endDate": "2023-04-30",
-        "principalInvestigator": "Dr. Julie Lefevre",
+        "investigator": "Dr. Julie Lefevre",
         "participants": 85
       },
       {
@@ -462,7 +462,7 @@
         },
         "startDate": "2020-12-10",
         "endDate": "2022-08-15",
-        "principalInvestigator": "Dr. Vincent Germain",
+        "investigator": "Dr. Vincent Germain",
         "participants": 140
       },
       {
@@ -473,7 +473,7 @@
         },
         "startDate": "2022-05-01",
         "endDate": "2024-07-15",
-        "principalInvestigator": "Dr. Claire Martin",
+        "investigator": "Dr. Claire Martin",
         "participants": 125
       }
     ],
@@ -594,7 +594,7 @@
         },
         "startDate": "2021-01-10",
         "endDate": "2022-11-30",
-        "principalInvestigator": "Dr. François Duchamp",
+        "investigator": ["Dr. François Duchamp", "Dr. Marie Lefevre"],
         "participants": 115
       },
       {
@@ -605,7 +605,7 @@
         },
         "startDate": "2020-06-01",
         "endDate": "2022-05-15",
-        "principalInvestigator": "Dr. Alice Brun",
+        "investigator": "Dr. Alice Brun",
         "participants": 80
       },
       {
@@ -616,7 +616,7 @@
         },
         "startDate": "2023-07-01",
         "endDate": "2024-11-30",
-        "principalInvestigator": "Dr. Pierre François",
+        "investigator": ["Dr. Pierre François", "Dr. Marie Lefevre"],
         "participants": 90
       },
       {
@@ -627,7 +627,7 @@
         },
         "startDate": "2023-03-21",
         "endDate": "2024-08-11",
-        "principalInvestigator": "Dr. Monique Renault",
+        "investigator": "Dr. Monique Renault",
         "participants": 60
       }
     ],
@@ -748,7 +748,7 @@
         },
         "startDate": "2019-09-05",
         "endDate": "2021-01-28",
-        "principalInvestigator": "Dr. Michel Lefebvre",
+        "investigator": ["Dr. Michel Lefebvre", "Dr. Sophie Martin"],
         "participants": 170
       },
       {
@@ -759,7 +759,7 @@
         },
         "startDate": "2021-10-23",
         "endDate": "2022-12-12",
-        "principalInvestigator": "Dr. Jacques Blanchard",
+        "investigator": ["Dr. Jacques Blanchard", "Dr. Michel Lefebvre"],
         "participants": 85
       },
       {
@@ -770,7 +770,7 @@
         },
         "startDate": "2020-04-07",
         "endDate": "2024-09-20",
-        "principalInvestigator": "Dr. Hélène Rousseau",
+        "investigator": "Dr. Hélène Rousseau",
         "participants": 240
       },
       {
@@ -781,7 +781,7 @@
         },
         "startDate": "2022-02-14",
         "endDate": "2025-07-09",
-        "principalInvestigator": "Dr. Chloé Germain",
+        "investigator": "Dr. Chloé Germain",
         "participants": 150
       },
       {
@@ -792,7 +792,7 @@
         },
         "startDate": "2022-09-01",
         "endDate": "2024-01-31",
-        "principalInvestigator": "Dr. David Lemoine",
+        "investigator": "Dr. David Lemoine",
         "participants": 140
       },
       {
@@ -803,7 +803,7 @@
         },
         "startDate": "2021-05-01",
         "endDate": "2023-11-30",
-        "principalInvestigator": "Dr. Élise Bonnet",
+        "investigator": "Dr. Élise Bonnet",
         "participants": 130
       }
     ],

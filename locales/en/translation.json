@@ -23,6 +23,7 @@
   "status.inProgress": "In progress",
   "status.all": "All",
   "hospitalStaff": "Hospital Staff",
+  "trialID": "ID reference",
 
   "months": {
     "Jan": "January",

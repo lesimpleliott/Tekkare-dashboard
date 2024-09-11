@@ -23,6 +23,7 @@
   "status.inProgress": "En cours",
   "status.all": "Tous",
   "hospitalStaff": "Personnel hospitalier",
+  "trialID": "Référence de l'essai",
 
   "months": {
     "Jan": "Janvier",

@@ -6,6 +6,6 @@ export type clinicalTrialsType = {
   };
   startDate: string;
   endDate: string;
-  principalInvestigator: string;
+  investigator: string | string[];
   participants: number;
 };
