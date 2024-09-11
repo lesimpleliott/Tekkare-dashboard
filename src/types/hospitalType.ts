@@ -1,3 +1,5 @@
+import { clinicalTrialsType } from "./clinicalTrialsType";
+
 export type HospitalData = {
   id: string;
   name: {
@@ -22,13 +24,7 @@ export type HospitalData = {
     numberOfDoctors: number;
     satisfactionRate: string;
   }>;
-  clinicalTrials: Array<{
-    name: string;
-    status: string;
-    startDate: string; // ISO 8601 date format
-    endDate: string; // ISO 8601 date format
-    totalPatients: number;
-  }>;
+  clinicalTrials: Array<clinicalTrialsType>;
   hospitalDepartments: Array<{
     department: string;
     patientsPerDay: number;

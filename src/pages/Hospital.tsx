@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import ClinicalTrials from "../components/ClinicalTrials";
+import ClinicalTrials from "../components/ClinicalTrials/ClinicalTrials";
 import DoctorSpecialties from "../components/DoctorSpecialties";
 import KPIStaff from "../components/KPIStaff";
 import MainTitle from "../components/MainTitle";
@@ -22,25 +22,27 @@ const Hospital = () => {
 
   return (
     <main>
-      <div className="max-w-5xl mx-auto">
+      <div className="mx-auto flex max-w-5xl flex-col gap-3 lg:gap-6">
         <MainTitle
           title={hospital.name[i18n.language as keyof typeof hospital.name]}
           subtitle={hospital.location}
         />
-        <section className="flex flex-col gap-4 lg:flex-row gap-x-10">
+
+        <section className="flex flex-col gap-4 gap-x-10 lg:flex-row">
           {/* Affichage des KPIs */}
           <KPIStaff
             overview={hospital.overview}
-            className="flex flex-row flex-wrap justify-center gap-2 lg:w-96 lg:flex-col lg:gap-4 "
+            className="flex flex-row flex-wrap justify-center gap-2 lg:w-64 lg:flex-col lg:gap-4"
           />
           {/* Affichage des graphiques  */}
           <DoctorSpecialties
             dataSpecialties={hospital.doctorSpecialties}
-            className="h-96 w-full lg:h-80 lg:text-center lg:items-center flex flex-col"
+            className="flex h-96 w-full flex-col lg:h-[350px] lg:items-center lg:text-center"
           />
         </section>
+
         {/* Affichage des essais cliniques */}
-        <ClinicalTrials dataTrials={hospital.clinicalTrials} />
+        <ClinicalTrials trials={hospital.clinicalTrials} />
       </div>
     </main>
   );
