@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <main>
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto flex max-w-5xl flex-col gap-3 lg:gap-8">
         <MainTitle title={t("welcomeMessage")} />
         <Overview />
         <MonthlyHospitalizations />

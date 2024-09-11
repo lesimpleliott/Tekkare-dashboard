@@ -18,7 +18,7 @@ const Overview = () => {
           {hospitals.map((hospital, index) => (
             <tr
               key={hospital.id}
-              className={`flex items-center ${index !== hospitals.length - 1 ? "border-main-200 border-b" : ""}`}
+              className={`flex items-center ${index !== hospitals.length - 1 ? "border-b border-main-200" : ""}`}
             >
               {/* Nom Hopital */}
               <td className="w-full py-2 leading-4">
@@ -38,14 +38,16 @@ const Overview = () => {
               {/* Satisfaction */}
               <DataColumn
                 tooltip={t("satisfactionRate")}
-                text={hospital.overview.satisfactionRate}
+                data={hospital.overview.satisfactionRate}
                 icon="fa-solid fa-star text-yellow-400"
               />
 
               {/* Docteurs */}
               <DataColumn
-                tooltip={t("doctors")}
-                text={hospital.overview.numberOfDoctors.toLocaleString(
+                tooltip={t("doctor", {
+                  count: hospital.overview.numberOfDoctors,
+                })}
+                data={hospital.overview.numberOfDoctors.toLocaleString(
                   i18n.language,
                 )}
                 icon="fa-solid fa-user-doctor text-primary-200"
@@ -53,8 +55,10 @@ const Overview = () => {
 
               {/* Infirmiers */}
               <DataColumn
-                tooltip={t("nurses")}
-                text={hospital.overview.numberOfNurses.toLocaleString(
+                tooltip={t("nurse", {
+                  count: hospital.overview.numberOfNurses,
+                })}
+                data={hospital.overview.numberOfNurses.toLocaleString(
                   i18n.language,
                 )}
                 icon="fa-solid fa-user-nurse text-secondary-200"
@@ -62,8 +66,10 @@ const Overview = () => {
 
               {/* Patients */}
               <DataColumn
-                tooltip={t("patients")}
-                text={hospital.overview.totalPatients.toLocaleString(
+                tooltip={t("patient", {
+                  count: hospital.overview.totalPatients,
+                })}
+                data={hospital.overview.totalPatients.toLocaleString(
                   i18n.language,
                 )}
                 icon="fa-solid fa-hospital-user text-main-200"

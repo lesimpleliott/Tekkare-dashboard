@@ -2,9 +2,14 @@
   "language": "English",
   "welcomeMessage": "Welcome to Tekkare!",
   "resume": "My resume",
-  "doctors": "Doctors",
-  "nurses": "Nurses",
-  "patients": "Patients",
+
+  "doctor_one": "doctor",
+  "doctor_other": "doctors",
+  "nurse_one": "nurse",
+  "nurse_other": "nurses",
+  "patient_one": "patient",
+  "patient_other": "patients",
+
   "satisfactionRate": "Satisfaction Rate",
   "overview": "Overview",
   "monthlyHospitalizations": "Monthly Hospitalization",
@@ -18,6 +23,7 @@
   "status.inProgress": "In progress",
   "status.all": "All",
   "hospitalStaff": "Hospital Staff",
+
   "months": {
     "Jan": "January",
     "Feb": "February",

@@ -2,9 +2,14 @@
   "language": "Français",
   "welcomeMessage": "Bienvenue sur Tekkare !",
   "resume": "Mon CV",
-  "doctors": "Docteurs",
-  "nurses": "Infirmier(e)s",
-  "patients": "Patients",
+
+  "doctor_one": "docteur",
+  "doctor_other": "docteurs",
+  "nurse_one": "infirmier·ère",
+  "nurse_other": "infirmier·ère·s",
+  "patient_one": "patient",
+  "patient_other": "patients",
+
   "satisfactionRate": "Taux de satisfaction",
   "overview": "Vue d'ensemble",
   "monthlyHospitalizations": "Hospitalisation mensuelle",
@@ -18,6 +23,7 @@
   "status.inProgress": "En cours",
   "status.all": "Tous",
   "hospitalStaff": "Personnel hospitalier",
+
   "months": {
     "Jan": "Janvier",
     "Feb": "Février",

@@ -17,24 +17,24 @@ const KPIStaff = ({
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col gap-4 lg:items-center">
+    <section className="flex flex-col gap-4">
       <h2 className="hidden w-fit lg:block">{t("hospitalStaff")}</h2>
 
       <div className={className}>
         <KPICard
           icon="fa-solid fa-user-doctor"
           number={overview.numberOfDoctors}
-          text={t("doctors")}
+          text={t("doctor", { count: overview.numberOfDoctors })}
         />
         <KPICard
           icon="fa-solid fa-user-nurse"
           number={overview.numberOfNurses}
-          text={t("nurses")}
+          text={t("nurse", { count: overview.numberOfNurses })}
         />
         <KPICard
           icon="fa-solid fa-hospital-user"
           number={overview.totalPatients}
-          text={t("patients")}
+          text={t("patient", { count: overview.totalPatients })}
         />
       </div>
     </section>
