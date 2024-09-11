@@ -28,7 +28,7 @@ const Hospital = () => {
           subtitle={hospital.location}
         />
 
-        <section className="flex flex-col gap-4 gap-x-10 lg:flex-row">
+        <section className="mt-20 flex flex-col gap-4 gap-x-10 lg:flex-row">
           {/* Affichage des KPIs */}
           <KPIStaff
             overview={hospital.overview}

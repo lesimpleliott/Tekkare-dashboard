@@ -8,7 +8,7 @@ const Navbar = () => {
   const { menuIsOpen } = useStoreMenu();
 
   return (
-    <header className="relative">
+    <header className="relative z-20">
       <MenuToggleButton />
 
       <nav

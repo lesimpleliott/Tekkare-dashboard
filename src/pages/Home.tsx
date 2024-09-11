@@ -19,8 +19,9 @@ const Home = () => {
 
   return (
     <main>
-      <div className="mx-auto flex max-w-5xl flex-col gap-3 lg:gap-8">
-        <MainTitle title={t("welcomeMessage")} />
+      <MainTitle title={t("welcomeMessage")} />
+
+      <div className="mx-auto mt-16 flex max-w-5xl flex-col gap-3 lg:gap-8">
         <Overview />
         <MonthlyHospitalizations />
 
@@ -28,7 +29,7 @@ const Home = () => {
           <TrialsTitleFilters />
 
           {/* Cards Essais Clinique */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
             {filterProgress.map((trial) => {
               const hospital = hospitals.find((hospital) =>
                 hospital.clinicalTrials.some(
