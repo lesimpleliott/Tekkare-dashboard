@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { clinicalTrialsType } from "../../types/clinicalTrialsType";
 import { calculateProgress } from "../../utils/calculateProgress";
 import CollapsedContent from "./CardContent/CollapsedContent";
-import ProgressBar from "./CardContent/ProgressBAr";
+import ProgressBar from "./CardContent/ProgressBar";
 import Tag from "./CardContent/Tag";
 
 const TrialCard = ({
