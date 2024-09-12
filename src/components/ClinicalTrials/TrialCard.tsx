@@ -7,21 +7,20 @@ import { calculateProgress } from "../../utils/calculateProgress";
 const TrialCard = ({
   trial,
   hospital,
-  link,
 }: {
   trial: clinicalTrialsType;
-  hospital?: string;
-  link?: string;
+  hospital?: { hospitalNameAndLocation: string; hospitalId: string };
 }) => {
   const { t, i18n } = useTranslation();
+
   const progress = calculateProgress(trial.startDate, trial.endDate);
   const isCompleted = progress >= 100;
-  const [cardIsOpen, setCardIsOpen] = useState(true);
+  const [cardIsOpen, setCardIsOpen] = useState(true); // Toggle Info 'false' par défaut
   const capitalize = (str: string) =>
     str.charAt(0).toUpperCase() + str.slice(1);
 
   return (
-    <article className="KPICard flex flex-col gap-2 px-4 pt-4">
+    <article className="KPICard flex h-fit flex-col gap-2 px-4 pt-4">
       <div className="items-between flex justify-between gap-2">
         {/* Titre essai */}
         <h3 className="w-full pr-10 text-lg font-bold leading-5">
@@ -65,7 +64,7 @@ const TrialCard = ({
 
       {/* Infos */}
       <section
-        className={`flex flex-col overflow-hidden text-sm transition-all duration-300 ease-out ${cardIsOpen ? "h-0" : "h-fit border-t border-main-200 pb-3 pt-2"}`}
+        className={`flex flex-col overflow-hidden text-sm transition-all duration-300 ease-out ${cardIsOpen ? "h-fit border-t border-main-200 pb-3 pt-2" : "h-0"}`}
       >
         {/* Trial ID */}
         <div className="">
@@ -89,8 +88,8 @@ const TrialCard = ({
         </p>
 
         {/* Hôpital */}
-        {hospital && link && (
-          <NavLink to={link}>
+        {hospital && (
+          <NavLink to={`/hospital/${hospital.hospitalId}`}>
             <strong>
               <i className="fa-solid fa-hospital min-w-4 text-center text-main-200"></i>{" "}
               {capitalize(
@@ -100,7 +99,7 @@ const TrialCard = ({
               )}
               {i18n.language === "fr" ? " : " : ": "}
             </strong>
-            {hospital}
+            {hospital.hospitalNameAndLocation}
           </NavLink>
         )}
 

@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import TrialCard from "../components/ClinicalTrials/TrialCard";
-import TrialsTitleFilters from "../components/ClinicalTrials/TrialsTitleFilters";
+import ClinicalTrials from "../components/ClinicalTrials/ClinicalTrials";
 import MainTitle from "../components/MainTitle";
 import MonthlyHospitalizations from "../components/MonthlyHospitalizations/MonthlyHospitalizations";
 import Overview from "../components/Overview/Overview";
@@ -8,7 +7,7 @@ import { useHospitalStore } from "../stores/datas.store";
 import { filterTrialProgress } from "../utils/filterTrialProgress";
 
 const Home = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const hospitals = useHospitalStore((state) => state.hospitals);
   const trials = hospitals.map((hospital) => hospital.clinicalTrials).flat();
 
@@ -24,38 +23,7 @@ const Home = () => {
       <div className="mx-auto mt-16 flex max-w-5xl flex-col gap-3 lg:gap-8">
         <Overview />
         <MonthlyHospitalizations />
-
-        <section className="mt-8 md:mt-0">
-          <TrialsTitleFilters />
-
-          {/* Cards Essais Clinique */}
-          <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-            {filterProgress.map((trial) => {
-              const hospital = hospitals.find((hospital) =>
-                hospital.clinicalTrials.some(
-                  (clinicalTrial) => clinicalTrial.trialId === trial.trialId,
-                ),
-              );
-
-              // Recherche nom de l'hopital + Ajout nom et de la localisation
-              const hospitalNameAndLocation = hospital
-                ? `${hospital.name[i18n.language as keyof typeof hospital.name]} - ${hospital.location}`
-                : "Unknown Hospital";
-
-              // Recherche ID de l'hopital
-              const hospitalId = hospital ? hospital.id : "unknown";
-
-              return (
-                <TrialCard
-                  key={trial.trialId}
-                  trial={trial}
-                  hospital={hospitalNameAndLocation}
-                  link={`/hospital/${hospitalId}`}
-                />
-              );
-            })}
-          </div>
-        </section>
+        <ClinicalTrials trials={filterProgress} hospitalDisplay={true} />
       </div>
     </main>
   );
