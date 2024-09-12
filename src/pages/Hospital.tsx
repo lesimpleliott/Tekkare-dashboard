@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import ClinicalTrials from "../components/ClinicalTrials/ClinicalTrials";
 import DoctorSpecialties from "../components/DoctorSpecialties";
-import KPIStaff from "../components/KPIStaff";
+import KPIStaff from "../components/KPICard/KPIStaff";
 import MainTitle from "../components/MainTitle";
 import { useHospitalStore } from "../stores/datas.store";
 import i18n from "../utils/i18n";
