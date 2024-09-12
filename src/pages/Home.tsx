@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import ClinicalTrials from "../components/ClinicalTrials/ClinicalTrials";
 import MainTitle from "../components/MainTitle";
-// import MonthlyHospitalizations from "../components/MonthlyHospitalizations/MonthlyHospitalizations";
-// import Overview from "../components/Overview/Overview";
+import MonthlyHospitalizations from "../components/MonthlyHospitalizations/MonthlyHospitalizations";
+import Overview from "../components/Overview/Overview";
 import { useHospitalStore } from "../stores/datas.store";
 import { filterTrialProgress } from "../utils/filterTrialProgress";
 
@@ -20,9 +20,9 @@ const Home = () => {
     <main>
       <MainTitle title={t("welcomeMessage")} />
 
-      <div className="mx-auto mt-16 flex max-w-5xl flex-col gap-3 lg:gap-8">
-        {/* <Overview />
-        <MonthlyHospitalizations /> */}
+      <div className="mx-auto mt-16 flex max-w-5xl flex-col gap-3 lg:gap-4">
+        <Overview />
+        <MonthlyHospitalizations />
         <ClinicalTrials trials={filterProgress} hospitalDisplay={true} />
       </div>
     </main>

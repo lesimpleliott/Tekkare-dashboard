@@ -47,10 +47,6 @@ const ClinicalTrials = ({
 
     return true;
   });
-  // // Tri par date de fin
-  // .sort(
-  //   (a, b) => new Date(b.endDate).getTime() - new Date(a.endDate).getTime(),
-  // );
 
   return (
     <section className="mt-4 space-y-4">
