@@ -1,9 +1,9 @@
-name: Generate a build and push to another branch (dev)
+name: Generate a build and push to another branch (main)
 
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   build:
